@@ -1,0 +1,321 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"o",
+				"obj"
+			],
+			[
+				"twee",
+				"tweet_detail_view"
+			],
+			[
+				"se",
+				"settings"
+			],
+			[
+				"ur",
+				"url"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"veer",
+				"verbose_name"
+			],
+			[
+				"User",
+				"UserModel"
+			],
+			[
+				"get",
+				"get_field"
+			],
+			[
+				"get_user",
+				"get_user_model"
+			],
+			[
+				"in",
+				"inactive"
+			],
+			[
+				"user_",
+				"user_permissions"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"Use",
+				"UserChangeForm"
+			],
+			[
+				"le",
+				"label"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"auth",
+				"authenticate"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"conten",
+				"content_type"
+			],
+			[
+				"ser_",
+				"set_password"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Set Syntax: Python"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 199.0,
+		"history":
+		[
+			"git --version",
+			"git clone https://github.com/alvee32/SocialWebApp.git"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ashrafulislam/Dev/webapp/tweetme"
+	],
+	"file_history":
+	[
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/views.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/templates/tweets/list_view.html",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/templates/tweets/detail_view.html",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/urls.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/urls.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/admin.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/templates/tweets/urls.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/templates/tweets/create_view.html",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/templates/tweets/delete_confirm.html",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweets/templates/tweets/update_view.html",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/settings/local.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/settings/base.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/views.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/templates/home.html",
+		"/Users/ashrafulislam/Dev/tweetme/src/static-storage/static/css/custom.css",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/settings/__init__.py",
+		"/Users/ashrafulislam/Dev/tweetme/bin/python-config",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/settings/production.py",
+		"/Users/ashrafulislam/Dev/tweetme/src/tweetme/settings.py",
+		"/Users/ashrafulislam/SocialWebApp/helloworld.java",
+		"/Users/ashrafulislam/Desktop/untitled folder/test.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/view.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/url.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/signup.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/sign.html",
+		"/Users/ashrafulislam/Desktop/untitled folder/permit.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/model.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/dbUrl.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/authentication.py",
+		"/Users/ashrafulislam/Desktop/untitled folder/untitled",
+		"/Users/ashrafulislam/Desktop/untitled folder/db_url",
+		"/untitled",
+		"/test.html"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/ashrafulislam/Dev/webapp/tweetme"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 86.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
