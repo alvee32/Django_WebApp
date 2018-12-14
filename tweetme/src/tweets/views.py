@@ -1,7 +1,21 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import DetailView, ListView
+from django.views.generic import DetailView, ListView, CreateView
+from .forms import TweetModelForm
 from .models import Tweet
-# Create your views here.
+
+#create
+
+class TweetCreateView(CreateView):
+	queryset = Tweet.objects.all()
+	form_class = TweetModelForm
+	template_name = 'tweets/create_view.html'
+	#fields = ['user', 'content']
+
+#update
+
+#delete
+
+#List / search
 
 #retrive
 
