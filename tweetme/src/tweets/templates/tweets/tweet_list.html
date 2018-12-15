@@ -4,6 +4,9 @@
 {{ object.timestamp|timesince }} ago</p></br></br>
 
 {% empty %}
-   <p> No Tweets yet. </p>
-
+   {% if request.GET.q %}
+   <p> No Tweets found. </p>
+   {% else %}
+   <p>No tweets yet. </p>
+   {% endif %}
 {% endfor %}
