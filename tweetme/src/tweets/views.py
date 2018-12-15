@@ -13,13 +13,10 @@ from .forms import TweetModelForm
 from .mixins import FormUserNeededMixin, UserOwnerMixin
 from .models import Tweet
 
-#create
-
 class TweetCreateView(FormUserNeededMixin, CreateView):
 	form_class = TweetModelForm
 	template_name = 'tweets/create_view.html'
-	success_url = "/tweet/create"
-	#login_url = '/admin/'
+	success_url = reverse_lazy("tweet:detail")
 
 
 class TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):
@@ -31,49 +28,27 @@ class TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):
 class TweetDeleteView(LoginRequiredMixin, DeleteView):
 	model = Tweet
 	template_name = 'tweets/delete_confirm.html'
-	success_url = reverse_lazy("home")
+	success_url = reverse_lazy("tweet:list") # reverse()
 		
 
-class TweetDetailView(DetailView):
+class TweetDetailView(DetailView): #pk == id
+	#obj = Tweet.objects.get(pk==pk) # get from db
 	queryset = Tweet.objects.all()
-	#template_name = "tweets/detail_view.html"
-	
-
-	#def get_object(self):
-	#   print(self.kwargs)
-	#	pk = self.kwargs.get("pk")
-	#	obj = get_object_or_404(Tweet, pk=pk)
-	#	return obj
 
 
 class TweetListView(ListView):
-	#template_name = "tweets/list_view.html"
 	queryset = Tweet.objects.all()
 
 	def get_context_data(self, *args, **kwargs):
 		context = super (TweetListView, self).get_context_data(*args, **kwargs)
-		#context["another_list"] = Tweet.objects.all()
-		#print(context)
 		return context
 		
 		
 
-def tweet_detail_view(request, pk=None): # pk == id
-	#obj = Tweet.objects.get(pk=pk) #Get from db
+def tweet_detail_view(request, pk=None):
 	obj = get_object_or_404(Tweet, pk=pk)
 	print(obj)
 	context = {
 	"object": obj
 	}
 	return render (request, "tweets/detail_view.html", context)
-
-#def tweet_list_view(request):
-#   queryset = Tweet.objects.all()
-#	print(queryset)
-#	for obj in queryset:
-#		print(obj.content)
-#	context = {
-#		"object_list": queryset
-#		}
-#	return render (request, "tweets/list_view.html", context)  
-
