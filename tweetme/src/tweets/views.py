@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import DetailView, ListView, CreateView,  UpdateView
 
 from .forms import TweetModelForm
-from .mixins import FormUserNeededMixin
+from .mixins import FormUserNeededMixin, UserOwnerMixin
 from .models import Tweet
 
 #create
@@ -15,7 +15,8 @@ class TweetCreateView(FormUserNeededMixin, CreateView):
 	#login_url = '/admin/'
 
 
-class TweetUpdateView(UpdateView):
+class TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):
+	queryset = Tweet.objects.all()
 	form_class = TweetModelForm
 	template_name = 'tweets/update_view.html'
 	success_url = "/tweet/"
