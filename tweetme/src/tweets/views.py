@@ -28,7 +28,6 @@ def tweet_create_view(request):
 	}
 	return render(request, 'tweets/create_view.html', context)
 
-
 #update
 
 #delete
