@@ -3,7 +3,11 @@ from django import forms
 from .models import Tweet
 
 class TweetModelForm(forms.ModelForm):
-	content = forms.CharField(label='', widget=forms.Textarea(attrs={"placeholder" : "What's on your mind ", "class": "form-control"  }))
+	content = forms.CharField(label='',
+	widget=forms.Textarea(
+	 	attrs={"placeholder" : "What's on your mind ",
+	 			 "class": "form-control" }
+	 		))
 	class Meta:
 		model = Tweet
 		fields = [
