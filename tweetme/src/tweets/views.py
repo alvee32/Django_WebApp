@@ -14,11 +14,10 @@ from .forms import TweetModelForm
 from .mixins import FormUserNeededMixin, UserOwnerMixin
 from .models import Tweet
 
-class TweetCreateView(FormUserNeededMixin, CreateView):
+class TweetCreateView(FormUserNeededMixin, CreateView);
 	form_class = TweetModelForm
 	template_name = 'tweets/create_view.html'
 	#success_url = reverse_lazy("tweet:detail")
-
 
 class TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):
 	queryset = Tweet.objects.all()
