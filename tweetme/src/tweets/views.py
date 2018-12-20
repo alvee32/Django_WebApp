@@ -27,8 +27,9 @@ class TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):
 
 class TweetDeleteView(LoginRequiredMixin, DeleteView):
 	model = Tweet
-	template_name = 'tweets/delete_confirm.html'
-	success_url = reverse_lazy("tweet:list") # reverse()
+	template_name = 'tweet/delete_confirm.html'
+	success_url = reverse_lazy("tweet:list")
+	#reverse()
 		
 
 class TweetDetailView(DetailView): #pk == id
