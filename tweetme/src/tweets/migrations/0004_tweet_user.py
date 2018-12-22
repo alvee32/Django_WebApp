@@ -9,9 +9,8 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('tweets', '0003_auto_20181211_1836'),
+    dependencies = [migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+                    ('tweets', '0003_auto_20181211_1836'),
     ]
 
     operations = [
