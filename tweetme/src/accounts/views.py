@@ -1,37 +1,74 @@
-from django.contrib.auth import get_user_model
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404, redirect
+from django.conf import settings
+from django.db import models
+from django.db.models.signals import post_save
+from django.urls import reverse_lazy
 
-from django.views import View
-from django.views.generic import DetailView
-# Create your views here.
+# Create your models here.
 
-from .models import UserProfile
+class UserProfileManager(models.Manager):
+    use_for_related_fields = True
 
-User = get_user_model()
+    def all(self):
+        qs = self.get_queryset().all()
+        try:
+            if self.instance:
+                qs = qs.exclude(user=self.instance)
+        except:
+            pass
+        return qs
 
-class UserDetailView(DetailView):
-    template_name = 'accounts/user_detail.html'
-    queryset = User.objects.all()
-    
-    def get_object(self):
-        return get_object_or_404(
-                    User, 
-                    username__iexact=self.kwargs.get("username")
-                    )
-    def get_context_data(self, *args, **kwargs):
-        context = super(UserDetailView, self).get_context_data(*args, **kwargs)
-        following = UserProfile.objects.is_following(self.request.user, self.get_object())
-        context['following'] = following
-        return context
+    def toggle_follow(self, user, to_toggle_user):
+        user_profile, created = UserProfile.objects.get_or_create(user=user) # (user_obj, true)
+        if to_toggle_user in user_profile.following.all():
+            user_profile.following.remove(to_toggle_user)
+            added = False
+        else:
+            user_profile.following.add(to_toggle_user)
+            added = True
+        return added
+
+    def is_following(self, user, followed_by_user):
+        user_profile, created = UserProfile.objects.get_or_create(user=user)
+        if created:
+            return False
+        if followed_by_user in user_profile.following.all():
+            return True
+        return False
 
 
 
-class UserFollowView(View):
-    def get(self, request, username, *args, **kwargs):
-        toggle_user = get_object_or_404(User, username__iexact=username)
-        if request.user.is_authenticated():
-            is_following = UserProfile.objects.toggle_follow(request.user, toggle_user)
-        return redirect("profiles:detail", username=username)
-        # url = reverse("profiles:detail", kwargs={"username": username})
-        # HttpResponseRedirect(url)
+class UserProfile(models.Model):
+    user        = models.OneToOneField(settings.AUTH_USER_MODEL, related_name='profile') # user.profile 
+    following   = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='followed_by') 
+    # user.profile.following -- users i follow
+    # user.followed_by -- users that follow me -- reverse relationship
+
+    objects = UserProfileManager() # UserProfile.objects.all()
+    # abc = UserProfileManager() # UserProfile.abc.all()
+
+    def __str__(self):
+        return str(self.following.all().count())
+
+    def get_following(self):
+        users  = self.following.all() # User.objects.all().exclude(username=self.user.username)
+        return users.exclude(username=self.user.username)
+
+    def get_follow_url(self):
+        return reverse_lazy("profiles:follow", kwargs={"username":self.user.username})
+
+    def get_absolute_url(self):
+        return reverse_lazy("profiles:detail", kwargs={"username":self.user.username})
+
+
+
+
+# ashraful = User.objects.first()
+# User.objects.get_or_create() # (user_obj, true/false)
+# ashraful.save()
+
+def post_save_user_receiver(sender, instance, created, *args, **kwargs):
+    if created:
+        new_profile = UserProfile.objects.get_or_create(user=instance)
+        # celery + redis
+        # deferred task
+post_save.connect(post_save_user_receiver, sender=settings.AUTH_USER_MODEL)
