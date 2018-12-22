@@ -9,7 +9,7 @@ Function views
 Class-based views
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
-Including another URLconf
+Including another URLconfiguration
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
@@ -22,8 +22,8 @@ from django.conf.urls.static import static
 from .views import home
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', home, name='home'),
+    url(r'^admin/', admin.site.urls),       #taking the URL as input
+    url(r'^$', home, name='home'),          #returning it to HOME PAGE
     url(r'^tweet/', include('tweets.urls', namespace='tweet')),
 ]
 
