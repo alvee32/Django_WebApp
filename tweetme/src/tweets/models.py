@@ -6,6 +6,8 @@ from django.db import models
 # Create your models here.
 
 from .validators import validate_content
+
+
 # model manager
 
 class Tweet(models.Model):
