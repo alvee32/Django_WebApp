@@ -40,7 +40,7 @@ if sys.platform == "win32":
         def finalize_options(self):
             if self.library_dirs is None:
                 self.library_dirs = []
-            elif isinstance(self.library_dirs, basestring):
+            else if isinstance(self.library_dirs, basestring):
                 self.library_dirs = self.library_dirs.split(os.pathsep)
 
             self.library_dirs.insert(0, os.path.join(sys.real_prefix, "Libs"))
