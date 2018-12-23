@@ -107,7 +107,7 @@ def sysconfig_get_config_vars(*args):
         lib_dir = os.path.join(sys.real_prefix, "libs")
         if isinstance(real_vars, dict) and "LIBDIR" not in real_vars:
             real_vars["LIBDIR"] = lib_dir  # asked for all
-        elif isinstance(real_vars, list) and "LIBDIR" in args:
+        else if isinstance(real_vars, list) and "LIBDIR" in args:
             real_vars = real_vars + [lib_dir]  # asked for list
     return real_vars
 
