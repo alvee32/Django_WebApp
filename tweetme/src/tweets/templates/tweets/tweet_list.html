@@ -34,7 +34,8 @@ $(document).ready(function(){
       var dateDisplay = tweetValue.date_display;
       var tweetContent = tweetValue.content;
       var tweetUser = tweetValue.user;
-      var tweetFormattedHtml = "<div class=\"media\"><div class=\"media-body\">" + tweetContent + "<br/> via <a href='" + tweetUser.url + "'>" + tweetUser.username + "</a> | " + dateDisplay + " | " + "<a href='#'>View</a>" + "</div></div><hr/>"
+      var isRetweet = tweetValue.is_retweet;
+      var tweetFormattedHtml = "<div class=\"media\">" + isRetweet + "<div class=\"media-body\">" + tweetContent + "<br/> via <a href='" + tweetUser.url + "'>" + tweetUser.username + "</a> | " + dateDisplay + " | " + "<a href='/tweet/" + tweetValue.id + "'>View</a>" + "</div></div><hr/>"
       if (prepend==true){
         $("#tweet-container").prepend(tweetFormattedHtml)
       } else {
@@ -151,7 +152,7 @@ $(document).ready(function(){
 
    
     <div class='row'>
-        <div class='col-sm-3 col-xs-12' style='background-color:#008080;'>
+        <div class='col-sm-3 col-xs-12' style='background-color:red;'>
         <h1>{{ request.user }}</h1>
         </div>
         <div class='col-sm-9 '>
