@@ -1,3 +1,4 @@
+
 from django.utils.timesince import timesince
 from rest_framework import serializers
 
@@ -12,7 +13,7 @@ class ParentTweetModelSerializer(serializers.ModelSerializer):
     timesince = serializers.SerializerMethodField()
     likes = serializers.SerializerMethodField()
     did_like = serializers.SerializerMethodField()
-    
+
     class Meta:
         model = Tweet
         fields = [
@@ -22,8 +23,9 @@ class ParentTweetModelSerializer(serializers.ModelSerializer):
             'timestamp',
             'date_display',
             'timesince',
-            'likes'
+            'likes',
             'did_like',
+           
 
         ]
 
@@ -34,7 +36,11 @@ class ParentTweetModelSerializer(serializers.ModelSerializer):
             if user in obj.liked.all():
                 return True
         return False
-    
+
+
+    def get_likes(self, obj):
+        return obj.liked.all().count()
+
     def get_date_display(self, obj):
         return obj.timestamp.strftime("%b %d, %Y at %I:%M %p")
 

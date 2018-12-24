@@ -22,14 +22,14 @@ class TweetManager(models.Manager):
             og_parent = parent_obj
         
         qs = self.get_queryset().filter(
-        	user=user, parent=og_parent
-        	).filter(
-        		timestamp__year=timezone.now().year,
-        		timestamp__month=timezone.now().month,
-        		timestamp__day=timezone.now().day,
-        	)
+                user=user, parent=og_parent
+                ).filter(
+                    timestamp__year=timezone.now().year,
+                    timestamp__month=timezone.now().month,
+                    timestamp__day=timezone.now().day,
+                )
         if qs.exists():
-        	return None
+            return None
 
         obj = self.model(
                 parent = og_parent,
@@ -37,7 +37,7 @@ class TweetManager(models.Manager):
                 content = parent_obj.content,
             )
         obj.save()
-        
+
         return obj
 
     def like_toggle(self, user, tweet_obj):
@@ -50,12 +50,13 @@ class TweetManager(models.Manager):
         return is_liked
 
 
+
 class Tweet(models.Model):
     parent      = models.ForeignKey("self", blank=True, null=True)
     user        = models.ForeignKey(settings.AUTH_USER_MODEL)
     content     = models.CharField(max_length=140, validators=[validate_content])
-    liked       = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name = 'liked')
-    reply       = models.BooleanField(verbose_name = 'Is a reply?', default=False)
+    liked       = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='liked')
+    reply       = models.BooleanField(verbose_name='Is a reply?', default=False)
     updated     = models.DateTimeField(auto_now=True)
     timestamp   = models.DateTimeField(auto_now_add=True)
 
@@ -97,9 +98,3 @@ def tweet_save_receiver(sender, instance, created, *args, **kwargs):
 
 
 post_save.connect(tweet_save_receiver, sender=Tweet)
-
-
-
-
-
-
