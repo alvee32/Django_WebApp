@@ -33,7 +33,7 @@ class TweetDeleteView(LoginRequiredMixin, DeleteView):
 		
 
 class TweetDetailView(DetailView): #pk == id
-	#obj = Tweet.objects.get(pk==pk) # get from db
+	#obj = Tweet.objects.get(pk==pk)  #get from db
 	queryset = Tweet.objects.all()
 
 
