@@ -38,21 +38,22 @@ class TweetDetailView(DetailView): #pk == id
 
 
 class TweetListView(ListView):
-	
+
+
 	def get_queryset(self, *args, **kwargs):
-		qs = Tweet.objects.all()
-		print(self.request.GET)
-		query = self.request.GET.get("q", None)
+		qs= Tweet.objects.all()
+		print (self.request.GET)
+		query = self.request.GET.get("q",None)
 		if query is not None:
 			qs = qs.filter(
-				Q(content__icontains=query) |
-				Q(user__username__icontains=query)
-				)
-		return qs
+				Q(content_icontains = query)
+				Q(user_username_icontains = query))
+			return qs
 
-	def get_context_data(self, *args, **kwargs):
-		context = super (TweetListView, self).get_context_data(*args, **kwargs)
-		return context
+			def get_context_data(self, *args, **kwargs):
+				context = super(TweetListView, self).get_context_data(*args, **kwargs)
+				return context
+	
 		
 		
 
