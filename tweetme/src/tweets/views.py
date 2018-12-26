@@ -39,7 +39,7 @@ class TweetDetailView(DetailView): #pk == id
 
 class TweetListView(ListView):
 	
-	def get_queryset(self, *args, **kwargs):
+	def get_queryset(self, *args, **kwargs):  #query to check arguments
 		qs = Tweet.objects.all()
 		print(self.request.GET)
 		query = self.request.GET.get("q", None)
