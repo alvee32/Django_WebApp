@@ -16,3 +16,16 @@ class UserRegisterForm(forms.Form):
         if password != password2:
             raise forms.ValidationError("Password must match")
         return password2
+
+
+    def clean_username(self):
+        username = self.cleaned_data.get('username')
+        if User.objects.filter(username__icontains=username).exists():
+            raise forms.ValidationError("This username is taken")
+        return username
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if User.objects.filter(email__icontains=email).exists():
+            raise forms.ValidationError("This email is already registered.")
+        return email
