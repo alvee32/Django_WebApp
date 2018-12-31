@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"follow",
+				"following"
+			],
+			[
+				"li",
+				"likes"
+			],
+			[
+				"Serializer",
+				"SerializerMethodField"
+			],
+			[
+				"get",
+				"get_absolute_url"
+			],
+			[
+				"Twee",
+				"TweetManager"
+			],
+			[
+				"par",
+				"parent_obj"
+			],
+			[
+				"s",
+				"self"
+			],
+			[
+				"pos",
+				"post_save_user_receiver"
+			],
+			[
+				"User",
+				"UserProfile"
+			],
+			[
+				"togg",
+				"toggle_user"
+			],
+			[
+				"user",
+				"user_profile"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"next",
+				"nextTweetUrl"
+			],
+			[
+				"key",
+				"keydown"
+			],
+			[
+				"search",
+				"searchQuery"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"date",
+				"dateDisplay"
+			],
+			[
+				"time",
+				"timesince"
+			],
+			[
+				"times",
+				"timestamp"
+			],
+			[
+				"this",
+				"this_"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
 				"Model",
 				"TweetModelSerializer"
 			],
@@ -80,14 +164,6 @@
 				"verbose_name"
 			],
 			[
-				"User",
-				"UserModel"
-			],
-			[
-				"get",
-				"get_field"
-			],
-			[
 				"get_user",
 				"get_user_model"
 			],
@@ -140,44 +216,115 @@
 	"buffers":
 	[
 		{
-			"file": "src/tweetme/settings/local.py",
+			"file": "src/tweetme/urls.py",
 			"settings":
 			{
-				"buffer_size": 3395,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/tweets/api/urls.py",
-			"settings":
-			{
-				"buffer_size": 624,
+				"buffer_size": 1984,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/tweets/api/views.py",
+			"file": "src/templates/navbar.html",
 			"settings":
 			{
-				"buffer_size": 259,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/tweets/api/serializers.py",
-			"settings":
-			{
-				"buffer_size": 201,
+				"buffer_size": 1631,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/tweets/api/__init__.py",
+			"file": "src/templates/home.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/templates/reply-modal.html",
+			"settings":
+			{
+				"buffer_size": 889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/tests.py",
+			"settings":
+			{
+				"buffer_size": 639,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tweets/forms.py",
+			"settings":
+			{
+				"buffer_size": 546,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tweets/models.py",
+			"settings":
+			{
+				"buffer_size": 3324,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/templates/registration/login.html",
+			"settings":
+			{
+				"buffer_size": 1142,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/templates/accounts/user_detail.html",
+			"settings":
+			{
+				"buffer_size": 1543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/views.py",
+			"settings":
+			{
+				"buffer_size": 2063,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/templates/accounts/user_register_form.html",
+			"settings":
+			{
+				"buffer_size": 579,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/accounts/forms.py",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tweets/views.py",
+			"settings":
+			{
+				"buffer_size": 2491,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -243,9 +390,16 @@
 	[
 		"/Users/ashrafulislam/Dev/webapp/tweetme",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/__pycache__",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/api",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates/accounts",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates/accounts/snippets",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates/registration",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templatetags",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/settings",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates",
@@ -253,32 +407,54 @@
 	],
 	"file_history":
 	[
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/urls.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/views.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/create_view.html",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/base.html",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/__init__.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/lib/python3.7/site-packages/django/urls/conf.py",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/settings/base.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/settings/production.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/urls.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/serializers.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/views.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/urls.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/models.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/forms.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/form.html",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/navbar.html",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/tweet_detail.html",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/home.html",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/settings/local.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/tests.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/settings/production.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/urls.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates/accounts/login.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates/accounts/user_detail.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templates/accounts/snippets/recommend.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/views.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templatetags/recommended.py",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/tweet_list.html",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/detail_view.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/models.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/templatetags/__init__.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/base.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/urls.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/templates/hashtags/tag_view.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/api/views.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/api/__init__.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/models.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/views.py",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/search_form.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/serializers.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/views.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/search.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/urls.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/reply-modal.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/tweet_detail.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/urls.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/views.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/form.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/api/urls.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/models.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/signals.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/views.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/hashtags/admin.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/admin.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/api/serializers.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/pagination.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/api/__init__.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/accounts/api/__init__.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/create_view.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/lib/python3.7/site-packages/django/urls/conf.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/forms.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/navbar.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/templates/home.html",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/tests.py",
+		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/detail_view.html",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/list_view.html",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/wsgi.py",
-		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweetme/views.py",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/delete_confirm.html",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/templates/tweets/update_view.html",
 		"/Users/ashrafulislam/Dev/webapp/tweetme/src/tweets/mixins.py",
@@ -365,19 +541,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/tweetme/settings/local.py",
+					"file": "src/tweetme/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3395,
+						"buffer_size": 1984,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1129,
-								1129
+								1813,
+								1813
 							]
 						],
 						"settings":
@@ -387,33 +563,33 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 475.0,
+						"translation.y": 258.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/tweets/api/urls.py",
+					"file": "src/templates/navbar.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 624,
+						"buffer_size": 1631,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								622,
-								622
+								1513,
+								1513
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -425,47 +601,77 @@
 				},
 				{
 					"buffer": 2,
-					"file": "src/tweets/api/views.py",
+					"file": "src/templates/home.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 259,
+						"buffer_size": 166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								230,
-								230
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "src/tweets/api/serializers.py",
+					"file": "src/templates/reply-modal.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 201,
+						"buffer_size": 889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								38
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/accounts/tests.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								446
 							]
 						],
 						"settings":
@@ -480,12 +686,100 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "src/tweets/api/__init__.py",
+					"buffer": 5,
+					"file": "src/tweets/forms.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								193
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/tweets/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2297,
+								2297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1782.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/accounts/templates/registration/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1120,
+								1120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/accounts/templates/accounts/user_detail.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1543,
 						"regions":
 						{
 						},
@@ -498,14 +792,133 @@
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 520.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/accounts/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2063,
+								2063
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 549.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/accounts/templates/accounts/user_register_form.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/accounts/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/tweets/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1610,
+								1610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -544,7 +957,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 86.0
+		"height": 37.0
 	},
 	"output.find_results":
 	{
@@ -592,7 +1005,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 229.0,
+	"side_bar_width": 258.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

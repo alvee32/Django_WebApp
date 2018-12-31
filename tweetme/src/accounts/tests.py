@@ -20,4 +20,4 @@ class UserProfileTestCase(TestCase):
 		self.assertTrue(user_profile.count() == 1)
 
 	def test_new_user (self):
-		new_user = User.objects.create(username=self.username + "abcd")
+		new_user = User.objects.create(username=self.username )
